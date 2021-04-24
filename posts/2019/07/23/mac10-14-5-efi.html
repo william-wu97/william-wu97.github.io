@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Dell Inspiron 15-7557 10.14.6 EFI分享 | William Wu&#39;s Blog</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/img/favicon.ico">
+    <meta name="description" content="William Wu的博客">
+    <link rel="preload" href="/assets/css/0.styles.37fe6c2b.css" as="style"><link rel="preload" href="/assets/js/app.debbc78f.js" as="script"><link rel="preload" href="/assets/js/7.159faa90.js" as="script"><link rel="preload" href="/assets/js/17.05170394.js" as="script"><link rel="prefetch" href="/assets/js/1.99ab5e6b.js"><link rel="prefetch" href="/assets/js/10.b7cf291b.js"><link rel="prefetch" href="/assets/js/11.35978a78.js"><link rel="prefetch" href="/assets/js/12.569f5bc4.js"><link rel="prefetch" href="/assets/js/13.beb57fe1.js"><link rel="prefetch" href="/assets/js/14.3c828ce8.js"><link rel="prefetch" href="/assets/js/15.3b126fa0.js"><link rel="prefetch" href="/assets/js/16.514f77a0.js"><link rel="prefetch" href="/assets/js/18.bc25a648.js"><link rel="prefetch" href="/assets/js/19.de498d3e.js"><link rel="prefetch" href="/assets/js/20.cdd12942.js"><link rel="prefetch" href="/assets/js/21.3a883d35.js"><link rel="prefetch" href="/assets/js/3.03df405a.js"><link rel="prefetch" href="/assets/js/4.c6651a98.js"><link rel="prefetch" href="/assets/js/5.6fe05458.js"><link rel="prefetch" href="/assets/js/6.639935e8.js"><link rel="prefetch" href="/assets/js/8.0546643a.js"><link rel="prefetch" href="/assets/js/9.d67f8fc3.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.37fe6c2b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div id="vuepress-theme-meteorlxy"><header class="header" data-v-7a046aea><div data-v-e4145d0a data-v-7a046aea><nav class="navbar" data-v-e4145d0a><div class="container" data-v-e4145d0a><a href="/" class="router-link-active" data-v-e4145d0a><span class="navbar-site-name" data-v-e4145d0a>
+          William Wu's Blog
+        </span></a> <div class="navbar-toggler" data-v-e4145d0a><svg class="icon" style="font-size:1.2em;" data-v-e4145d0a data-v-e4145d0a><title data-v-e4145d0a data-v-e4145d0a>menu</title><use xlink:href="#icon-menu" data-v-e4145d0a data-v-e4145d0a></use></svg></div> <div class="navbar-links" data-v-e4145d0a><a href="/" class="navbar-link" data-v-e4145d0a>
+            首页
+          </a><a href="/posts/" class="navbar-link router-link-active" data-v-e4145d0a>
+            文章
+          </a><a href="/about/" class="navbar-link" data-v-e4145d0a>
+            关于
+          </a></div></div></nav> <div class="navbar-holder" style="display:none;" data-v-e4145d0a></div></div> <div class="banner" data-v-98d6aa8c data-v-7a046aea data-v-7a046aea><div class="container" data-v-98d6aa8c><div class="center" data-v-98d6aa8c><h1 data-v-98d6aa8c data-v-7a046aea>
+          Dell Inspiron 15-7557 10.14.6 EFI分享
+        </h1></div></div></div></header> <div class="container clearfix show-aside" data-v-4dd605a1 data-v-4dd605a1><main class="main" data-v-4dd605a1><div class="post" data-v-4dd605a1 data-v-4dd605a1><section class="post-meta main-div" data-v-4e23451f><section class="post-date clearfix" data-v-4e23451f><span class="create-date" data-v-4e23451f>
+      发布时间 : 2019-07-23
+    </span> <span class="update-date" data-v-4e23451f>
+      最后修改 : 2019-09-20
+    </span></section> <section class="post-links" data-v-4e23451f><a href="/posts/2018/08/18/mac10-14-beta6-clover4646.html" class="post-link" data-v-4e23451f>
+      上一篇 : Dell Inspiron 15-7557 安装Mac10.14 beta6带clover4646 EFI分享
+    </a> <a href="/posts/2020/03/07/mac10-15-3.html" class="post-link" data-v-4e23451f>
+      下一篇 : Dell Inspiron 15-7557 10.15.3 EFI分享
+    </a></section></section> <article class="main-div"><div class="post-content content content__default"><h3 id="没错，我从10-14-1一路升到了10-14-6，这篇文章只分享efi。简书文章莫名其妙的被锁定，以后不会在简书上分享了）"><a href="#没错，我从10-14-1一路升到了10-14-6，这篇文章只分享efi。简书文章莫名其妙的被锁定，以后不会在简书上分享了）" class="header-anchor">#</a> 没错，我从10.14.1一路升到了10.14.6，这篇文章只分享EFI。简书文章莫名其妙的被锁定，以后不会在简书上分享了）</h3> <h4 id="efi地址："><a href="#efi地址：" class="header-anchor">#</a> EFI地址：</h4> <p><a href="https://www.lanzous.com/i540x2j" target="_blank" rel="noopener noreferrer">蓝奏云<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 密码:a1ex</p> <h4 id="更新了哪些内容："><a href="#更新了哪些内容：" class="header-anchor">#</a> 更新了哪些内容：</h4> <ol><li>Clover更新到了4928</li> <li>USB定制（不用再担心升级后不能用了）</li> <li>核显ID更换为0x0a260000（解决某些软件花屏及开机卡顿问题，缺点是只有1G显存）</li></ol> <h6 id="ps-usb定制是根据黑果小兵的视频教程弄的，蓝牙、内置键盘、摄像头、触控板已经内建，教程地址在这-传送门"><a href="#ps-usb定制是根据黑果小兵的视频教程弄的，蓝牙、内置键盘、摄像头、触控板已经内建，教程地址在这-传送门" class="header-anchor">#</a> PS:USB定制是根据黑果小兵的视频教程弄的，蓝牙、内置键盘、摄像头、触控板已经内建，教程地址在这:<a href="https://blog.daliansky.net/Intel-FB-Patcher-tutorial-and-insertion-pose.html#more" target="_blank" rel="noopener noreferrer">传送门<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></h6></div></article> <section class="post-meta main-div" data-v-4e23451f><section class="post-date clearfix" data-v-4e23451f><span class="create-date" data-v-4e23451f>
+      发布时间 : 2019-07-23
+    </span> <span class="update-date" data-v-4e23451f>
+      最后修改 : 2019-09-20
+    </span></section> <section class="post-links" data-v-4e23451f><a href="/posts/2018/08/18/mac10-14-beta6-clover4646.html" class="post-link" data-v-4e23451f>
+      上一篇 : Dell Inspiron 15-7557 安装Mac10.14 beta6带clover4646 EFI分享
+    </a> <a href="/posts/2020/03/07/mac10-15-3.html" class="post-link" data-v-4e23451f>
+      下一篇 : Dell Inspiron 15-7557 10.15.3 EFI分享
+    </a></section></section> <!----></div></main> <aside class="aside" data-v-4dd605a1><div class="info-card main-div" data-v-9d847660 data-v-4dd605a1><div class="info-card-header" data-v-9d847660><img src="/img/avatar.jpg" alt="William Wu" class="info-avatar" data-v-9d847660></div> <div class="info-card-body" data-v-9d847660><section class="info-nickname" data-v-9d847660>
+      William Wu
+    </section> <section class="info-desc" data-v-9d847660>Nothing is true,everything is permitted.(万物皆虚,万事皆允。)</section> <section class="info-contact" data-v-9d847660><section data-v-9d847660><span title="Guangzhou City, China" data-v-9d847660 data-v-9d847660><svg class="icon" style="font-size:1em;" data-v-9d847660 data-v-9d847660><title data-v-9d847660 data-v-9d847660>Guangzhou City, China</title><use xlink:href="#icon-location" data-v-9d847660 data-v-9d847660></use></svg><span class="info-text" data-v-9d847660 data-v-9d847660>
+          Guangzhou City, China
+        </span></span></section> <!----> <section data-v-9d847660><a href="mailto:1577812877@qq.com" title="1577812877@qq.com" data-v-9d847660 data-v-9d847660><svg class="icon" style="font-size:1em;" data-v-9d847660 data-v-9d847660><title data-v-9d847660 data-v-9d847660>1577812877@qq.com</title><use xlink:href="#icon-email" data-v-9d847660 data-v-9d847660></use></svg><span class="info-text" data-v-9d847660 data-v-9d847660>
+          1577812877@qq.com
+        </span></a></section></section></div> <div class="info-card-footer" data-v-9d847660><section class="info-sns clearfix" data-v-9d847660><a href="https://github.com/Hunterwty" target="_blank" class="sns-link" data-v-9d847660><span title="GitHub: Hunterwty" class="sns-icon" data-v-9d847660 data-v-9d847660><svg class="icon" style="font-size:1.5em;" data-v-9d847660 data-v-9d847660><title data-v-9d847660 data-v-9d847660>GitHub: Hunterwty</title><use xlink:href="#icon-github" data-v-9d847660 data-v-9d847660></use></svg></span></a></section></div></div> <!----></aside></div> <footer class="footer" data-v-1375e54c><p class="footer-sns-links" data-v-1375e54c><a href="https://github.com/Hunterwty" target="_blank" class="sns-link" data-v-1375e54c><span title="GitHub: Hunterwty" class="sns-icon" data-v-1375e54c data-v-1375e54c><svg class="icon" style="font-size:25px;" data-v-1375e54c data-v-1375e54c><title data-v-1375e54c data-v-1375e54c>GitHub: Hunterwty</title><use xlink:href="#icon-github" data-v-1375e54c data-v-1375e54c></use></svg></span></a></p> <p class="footer-text" data-v-1375e54c><span data-v-1375e54c>Powered by </span> <a href="https://github.com/vuejs/vuepress" target="_blank" data-v-1375e54c>
+      VuePress
+    </a> <span data-v-1375e54c> | </span> <a href="https://github.com/meteorlxy/vuepress-theme-meteorlxy" target="_blank" data-v-1375e54c>
+        meteorlxy
+      </a></p> <!----></footer></div><div class="global-ui"><!----><!----><div class="cat-container" data-v-a13867c0><canvas id="vuepress-cat" width="280" height="250" class="live2d" data-v-a13867c0></canvas></div><div class="reading-progress top" data-v-21b39eda><div class="progress" data-v-21b39eda></div></div></div></div>
+    <script src="/assets/js/app.debbc78f.js" defer></script><script src="/assets/js/7.159faa90.js" defer></script><script src="/assets/js/17.05170394.js" defer></script>
+  </body>
+</html>
