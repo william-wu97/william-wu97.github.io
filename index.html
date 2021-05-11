@@ -6,14 +6,21 @@
 </head>
 
 <style lang="css">
+    html,
     body {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        height: 100vh;
         background-image: url(./static/bg.jpeg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
     }
 
     .content {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        width: 100%;
     }
 
     section {
@@ -31,13 +38,20 @@
     a {
         color: #fff;
     }
+
+    img{
+        width: 100px;
+        display: block;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
 </style>
 
 <body>
     <div class="content">
         <section>
             <div class="container">
-                <img src="./static/avatar.png" alt="">
+                <img src="./static/avatar.jpg" alt="">
                 <h3>
                     <a href="https://hunterwty.github.io/vuepress-blog/">Github Pages + VuePress搭建的个人博客</a>
                 </h3>
